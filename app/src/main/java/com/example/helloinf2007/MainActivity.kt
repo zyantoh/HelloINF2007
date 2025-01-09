@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        //enableEdgeToEdge()
 
         // get current date and time
         val currentDateTime = LocalDateTime.now()
@@ -41,7 +41,6 @@ class MainActivity : ComponentActivity() {
         Log.d("MainActivity", "onCreate function is created at $formattedDateTime")
 
         setContent {
-
             HelloINF2007Theme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
